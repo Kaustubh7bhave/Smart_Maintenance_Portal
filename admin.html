@@ -1,0 +1,164 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<head>
+<title>Smart Maintenance Portal | admin </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Colored Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- //bootstrap-css -->
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- font CSS -->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font.css" type="text/css"/>
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<script src="js/jquery2.0.3.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/screenfull.js"></script>
+		<script>
+		$(function () {
+			$('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
+
+			if (!screenfull.enabled) {
+				return false;
+			}
+
+			
+
+			$('#toggle').click(function () {
+				screenfull.toggle($('#container')[0]);
+			});	
+		});
+		</script>
+<!-- charts -->
+<script src="js/raphael-min.js"></script>
+<script src="js/morris.js"></script>
+<link rel="stylesheet" href="css/morris.css">
+<!-- //charts -->
+<!--skycons-icons-->
+<script src="js/skycons.js"></script>
+<!--//skycons-icons-->
+</head>
+<body class="dashboard-page">
+	<script>
+	        var theme = $.cookie('protonTheme') || 'default';
+	        $('body').removeClass (function (index, css) {
+	            return (css.match (/\btheme-\S+/g) || []).join(' ');
+	        });
+	        if (theme !== 'default') $('body').addClass(theme);
+        </script>
+	<nav class="main-menu">
+		<ul>
+			<li>
+				<a href="admin.html">
+					<i class="fa fa-home nav_icon"></i>
+					<span class="nav-text">
+					Dashboard
+					</span>
+				</a>
+			</li>
+			<li class="has-subnav">
+				<a href="Add_Department.jsp">
+				<!--i class="fa fa-cogs" aria-hidden="true"></i-->
+				<i class="fa fa-check-square-o nav_icon"></i>
+				<span class="nav-text">
+						Add Department and View Department edit,delete.		</span>
+				<!--i class="icon-angle-right"></i><i class="icon-angle-down"></i-->
+				</a>
+				<!--ul>
+					<li>
+					<a cla  ss="subnav-text" href="buttons.html">
+					Buttons
+					</a>
+					</li>
+					<li>
+					<a class="subnav-text" href="grids.html">
+					Grids
+					</a>
+					</li>
+				</ul-->
+			</li>
+			<li class="has-subnav">
+				<a href="viewadmin.jsp">
+				<i class="fa fa-check-square-o nav_icon"></i>
+				<span class="nav-text">
+				View All Data
+				</span>
+				</a>
+			</li>
+			<li class="has-subnav">
+				<a href="addRoadMaintenanceDeadline.jsp">
+				<i class="fa fa-check-square-o nav_icon"></i>
+				<span class="nav-text">
+				Add road Maintenance deadline with day wise
+				</span>
+				</a>
+			</li>
+			<li class="has-subnav">
+				
+				<a href="addHelpline.jsp">
+					<i class="fa fa-file-text-o nav_icon"></i>
+						<span class="nav-text">add Helpline</span>
+					<!--i class="icon-angle-right"></i><i class="icon-angle-down"></i-->
+				</a>	
+			</li>
+			
+		</ul>
+		<ul class="logout">
+			<li>
+			<a href="login.html">
+			<i class="icon-off nav-icon"></i>
+			<span class="nav-text">
+			Logout
+			</span>
+			</a>
+			</li>
+		</ul>
+	</nav>
+	<section class="wrapper scrollable">
+		<nav class="user-menu">
+			<a href="javascript:;" class="main-menu-access">
+			<i class="icon-proton-logo"></i>
+			<i class="icon-reorder"></i>
+			</a>
+		</nav>
+		<section class="title-bar">
+			<div class="full-top">
+				<h1><a href="admin.html"><img src="images/logo.png" alt="" />Smart Maintenance Portal</a></h1>
+			</div>
+			<div class="clearfix"> </div>
+		</section>
+		<div class="blank">
+			<div class="blank-page">
+		<ol><!--li>Login: The admin can login to their personal account using their ID and password.</li>
+		--><li>Add Department: The admin can add new departments to the system.</li>
+		<li>View All Departments: The admin can view all departments in the system and also edit or delete them if required.</li>
+		<li>View All Data: The admin can view all data in the system, including complaints and other information.</li>
+		<li>Add Road Maintenance Deadline: The admin can set deadlines for road maintenance activities, and also specify them day-wise.</li>
+		<li>Add Helpline Numbers: The admin can add contact numbers for helplines or emergency services that may be required by users.</li>
+		<!--  --li>Manage Operators: The admin can manage the operators who receive and process information about problems from the survey officials. They can create and modify operator logins and officer information, and also solve any technical problems that arise.</li>
+		<li>Super User: Each district has one super user who is responsible for technical administrative work in the district.</li-->
+		</ol>
+	   </div>
+		</div>			
+		<div class="footer">
+			<p>© 2023 Colored . All Rights Reserved . <a href="http://w3layouts.com/"></a></p>
+		</div>
+		<!-- //footer -->
+	</section>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/proton.js"></script>
+</body>
+</html>
